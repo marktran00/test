@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  min-width: 1000px;
+  position: fixed; /* Thanh navbar cố định */
+  top: 0; /* Dính liền ở phía trên cùng của trang */
+  left: 0; /* Dính liền ở bên trái của trang */
+  right: 0; /* Dính liền ở bên phải của trang */
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item {
+  display: inline-block;
+  position: relative;
+}
+
+.menu__link {
+  color: white;
+  height: auto;
+  text-decoration: none;
+  padding: 15px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.menu__link:hover {
+  color: white;
+  background-color: rgb(144, 131, 131);
+}
+
+.menu__item:hover .submenu {
+  display: block;
+  top: 17px;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  width: auto; /* Thay đổi: Bề rộng submenu là auto */
+  margin-top: 15px; /* Thay đổi: Khoảng cách trên của submenu là 15px */
+  color: black;
+  padding-left: 0;
+}
+
+.submenu__item {
+  display: block;
+}
+
+.submenu__link {
+  display: flex;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  left: 0;
+}
+
+.submenu__link:hover {
+  color: black;
+  background-color: rgb(208, 128, 128);
+}
+
+.navbar__search {
+  padding: 0 20px;
+}
+
+.search {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.slide {
+  position: relative;
+  background: url('/assets/img/la.jpg') top center / cover no-repeat;
+  margin-top: 48px;
+  padding-top: 50%;
+}
+
+.slide .test_content {
+  position: absolute;
+  bottom: 47px;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  height: auto;
+}
+
+.text_heading {
+  background: white;
+  text-align: center;
+}
+
+.menber_content {
+  width: 1000px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 15px;
+}
+
+.menber_list {
+  display: inline-block;
+  width: 1000px;
+  align-items: center;
+}
+
+.menber_item {
+  float: left;
+  width: 33.333333%;
+}
+
+.menber_item img {
+  display: block;
+  margin: 0 auto;
+  width: 154px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  right: 24px;
+}
